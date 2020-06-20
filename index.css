@@ -1,0 +1,54 @@
+/*give elements height to center another elements*/
+html,body, .continer{
+    height: 90%
+}
+/*عمل فليكس سنتر للديف الاب*/
+.continer, .digit,.change, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* وضع خلفية للديف الابن والبوسشت ريلاتف ووضع طول وعرض له بنفس مقاسات الصور  400 * 400*/
+.clock{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: url(img/clock_face.jpg);
+}
+/*هذا البلوك لرسم سنتر للعقارب فى منتصف صورة الساعة */
+.clock:after{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    
+}
+/*لوضع صور العقارب فوق بعض فى المنتصف*/
+.hand{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+input{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+.dots{
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+.change button{
+	margin: 10px;
+	background-color: cornflowerblue;
+}
+footer{
+    background-color: cadetblue;
+    font-weight: bold;
+}

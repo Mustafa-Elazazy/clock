@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>clock</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="continer">
+        <!-- بلوك الساعة وبه الخلفية الثابتة فى ال css-->
+        <div class="clock">
+            <!--  عقارب الساعات-->
+            <img id="hhand" class="hand" src="img/hour_hand.png">
+            <img id="mhand" class="hand" src="img/minute_hand.png">
+            <img id="shand" class="hand" src="img/second_hand.png">
+
+        </div>
+
+    </div>
+    <div class="digit">
+        <input type="text" id="th"><span class="dots">:</span>
+        <input type="text" id="tm"><span class="dots">:</span>
+        <input type="text" id="ts"><span class="dots">:</span>
+        <input type="text" id="tv" value="AM">
+    </div>
+    <div class="change">
+        <button id="one" class="btn" onclick="changing1()">Shape One</button>
+        <button id="two" class="btn" onclick="changing2()">Shape two</button>
+        <button id="three" class="btn" onclick="changing3()">Shape three</button>
+    </div>
+    <footer> All Copyright reserved &copy; Mustafa Elazazy</footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
